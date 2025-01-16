@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Notes</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body h1 {
+            background: linear-gradient(red, blue);
+        }
+        body h1:hover {
+            color: aqua;
+        }
+        body {
+            background: linear-gradient(aqua, white);
+        }
+        body:hover {
+            background: linear-gradient(white, aqua);
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            font-size: 2em;
+            color: #fff;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 80px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: orange;
+            transform: scale(1.1);
+            transition: transform 0.6s;
+        }
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            nav ul li {
+                width: 100%;
+                background: #444;
+            }
+            nav ul li a {
+                padding: 15px;
+            }
+        }
+        .r23head {
+            background: linear-gradient(to right, red, orange, pink, aqua, green, blue);
+        }
+        .csehead h1 {
+            background: linear-gradient(to right, skyblue, black, red, pink, orange);
+        }
+        .csehead h1:hover {
+            color: white;
+            font-size: 50px;
+        }
+        .row1 {
+            display: flex;
+            flex-wrap: wrap; /* Add this to allow wrapping */
+            justify-content: center; /* Center the items on smaller screens */
+        }
+        .firsty, .secondy, .thirdy, .fourthy {
+            padding: 20px;
+            flex: 1 1 300px; /* Add flexibility for smaller screens */
+        }
+        .firsty button, .secondy button, .thirdy button, .fourthy button {
+            margin: 10px;
+            padding: 20px;
+            width: 100%; /* Adjust to fit within the container */
+            background: linear-gradient(to right, skyblue, pink);
+            border-radius: 20px;
+        }
+        .firsty button:hover, .secondy button:hover, .thirdy button:hover, .fourthy button:hover {
+            background: linear-gradient(white, red);
+            transform: scale(1.1);
+            transition: transform 0.6s;
+        }
+        .firsty button a, .secondy button a, .thirdy button a, .fourthy button a {
+            text-decoration: none;
+            color: black;
+        }
+        .thin-hr {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 20px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            color: orange;
+        }
+        footer a {
+            margin: 80px;
+            font-size: 40px;
+        }
+        footer p {
+            font-size: 40px;
+            margin-bottom: 20px;
+            padding: 80px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>COLLEGE NOTES</h1></center>
+    <nav>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <ul id="navbar">
+            <li><a href="index.html" style="font-size: 20px;"><strong>Home</strong></a></li>
+            <li><a href="#" style="font-size: 20px;"><strong>About</strong></a></li>
+            <li><a href="#" style="font-size: 20px;"><strong>Services</strong></a></li>
+            <li><a href="#" style="font-size: 20px;"><strong>Contact</strong></a></li>
+            <li style="color: green;"><a href="https://wa.me/8143711123" style="color: green; font-size: 40px;">WhatsApp</a></li>
+        </ul>
+    </nav>
+    <div class="r23head"><h2 style="color: red;"><strong><u><center>R23 REGULATION</center></u></strong></h2></div>
+    <center><strong><p style="font-size: 30px;">We provide notes for students to easily revise!</p></strong></center>
+    <div class="csehead"><center><h1>CSE</h1></center></div>
+    <div class="row1">
+        <div class="firsty">
+            <strong><p style="margin-left: 90px;">1ST YEAR</p></strong>
+            <button><a href="C:/Users/Easwar/OneDrive/Desktop/classnotesproject/firstsem.html">FIRST SEM</a></button><br>
+            <button><a href="C:/Users/Easwar/OneDrive/Desktop/classnotesproject/secondsem.html">SECOND SEM</a></button>
+        </div>
+        <div class="secondy">
+            <strong><p style="margin-left: 90px;">2ND YEAR</p></strong>
+            <button><a href="c:/Users/Easwar/OneDrive/Desktop/classnotesproject/thirdsem.html">THIRD SEM</a></button><br>
+            <button><a href="c:/Users/Easwar/OneDrive/Desktop/clgntss/fourthsem.html">FOURTH SEM</a></button>
+        </div>
+        <div class="thirdy">
+            <strong><p style="margin-left: 90px;">3RD YEAR</p></strong>
+            <button><a href="C:/Users/Easwar/OneDrive/Desktop/classnotesproject/fifthsem.html">FIFTH SEM</a></button><br>
+            <button><a href="C:/Users/Easwar/OneDrive/Desktop/classnotesproject/sixthsem.html">SIXTH SEM</a></button>
+        </div>
+        <div class="fourthy">
+            <strong><p style="margin-left: 90px;">4TH YEAR</p></strong>
+            <button><a href="C:/Users/Easwar/OneDrive/Desktop/classnotesproject/seventhsem.html">SEVENTH SEM</a></button><br>
+            <button><a href="C:/Users/Easwar/OneDrive/Desktop/classnotesproject/eightsem.html">EIGHT SEM</a></button>
+        </div>
+    </div>
+    <hr class="thin-hr">
+    <footer>
+        <strong><p>CONTACT: 1234567890</p></strong>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+        <strong><p>@SWARNANDHRA COLLEGE OF ENGINEERING AND TECHNOLOGY</p></strong>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
